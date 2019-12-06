@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity"
+    android:orientation="horizontal">
+
+
+
+    <RelativeLayout
+        android:layout_width="65dp"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/ProfilePhotos">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+
+
+
+        <LinearLayout
+            android:layout_width="35dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/LayoutHome"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/ProfilePhotos">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/twotone_home_24"
+                android:id="@+id/HomeImage"
+                android:clickable="true">
+            </ImageView>
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:background="@drawable/ic_fiber_manual_record_black_24dp"
+                android:id="@+id/ClickedHome">
+            </ImageView>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="42dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/LayoutTime"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_below="@id/LayoutHome">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="@drawable/twotone_access_time_24"
+                android:id="@+id/TimeImage"
+                android:clickable="true">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:background="@drawable/ic_fiber_manual_record_black_24dp"
+                android:id="@+id/ClickedClock"
+                android:visibility="invisible">
+            </ImageView>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="42dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/LayoutDashboard"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_below="@id/LayoutTime">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="@drawable/twotone_dashboard_24"
+                android:id="@+id/DashboardImage"
+                android:clickable="true">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:background="@drawable/ic_fiber_manual_record_black_24dp"
+                android:id="@+id/ClickedDashboard"
+                android:visibility="invisible">
+            </ImageView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="42dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/LayoutContacts"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_below="@id/LayoutDashboard">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="@drawable/twotone_person_24"
+                android:id="@+id/ImageContacts"
+                android:clickable="true">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:background="@drawable/ic_fiber_manual_record_black_24dp"
+                android:id="@+id/ClickedContacts"
+                android:visibility="invisible">
+            </ImageView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="42dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/LayoutDialer"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_below="@id/LayoutContacts">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="@drawable/twotone_call_24"
+                android:id="@+id/ImageDialer"
+                android:clickable="true">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:background="@drawable/ic_fiber_manual_record_black_24dp"
+                android:id="@+id/ClickedDialer"
+                android:visibility="invisible">
+            </ImageView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp">
+
+        <com.abhinandan.cv.Custom.CustomViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/containerViewPager">
+
+        </com.abhinandan.cv.Custom.CustomViewPager>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
